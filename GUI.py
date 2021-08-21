@@ -13,6 +13,16 @@ constructions = tk.Label(frame, text="\nEnter coordinates\n")
 constructions.pack()
 
 
+# Function for check if the input string is a number
+
+def is_number(s):
+    try:
+        float(s)
+    except ValueError:
+        return False
+    return True
+
+
 # Function for getting Input from text boxes
 
 def get_input():
@@ -20,12 +30,17 @@ def get_input():
     input1 = input_txt.get(1.0, "end-1c")
     input2 = input_txt2.get(1.0, "end-1c")
 
-    label.config(text="Latitude Input: " + input1)
-    label2.config(text="Longitude Input: " + input2)
-    label3.config(text="\nclose the app and open the map file \n(Map.html)")
+    #   if the input is not numbers
+    if not(is_number(input1)) or not(is_number(input2)):
+        return messagebox.showinfo('Non Number Input! \nEnter coordinates numbers ........')
 
-    coordinatesLocator.find_map_location(input1, input2)
-    return messagebox.showinfo('Location found', 'your map saved successfully!')
+    else:
+        label.config(text="Latitude Input: " + input1)
+        label2.config(text="Longitude Input: " + input2)
+        label3.config(text="\nclose the app and open the map file \n(Map.html)")
+
+        coordinatesLocator.find_map_location(input1, input2)
+        return messagebox.showinfo('Location found', 'your map saved successfully!')
 
 
 latitude_text = tk.Label(frame, text="Latitude")

@@ -1,0 +1,7 @@
+Hollywood Sign, LA, CA, USA	34.134117	-118.321495
+Casa Grande Ruins National Monument, Coolidge, AZ, USA	32.995049	-111.536324
+Hovenweep National Monument, Utah, USA	37.383064	-109.071236
+Jumonville Rocks, Jumonville, PA, USA	39.877586	-79.640617
+Battlefield Walk and Bike Trail, Lookout Mountain, TN, USA	35.004696	-85.340828
+Fort Sumner Historic Site/Bosque Redondo Memorial, Fort Sumner, NM, USA	34.404377	-104.193565
+Fort Jesup State Historic Site, Many, Louisiana, USA	31.613188	-93.401878
