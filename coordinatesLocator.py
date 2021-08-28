@@ -15,3 +15,5 @@ def find_map_location(lat, lon):
     folium.Marker([lat, lon], popup=[lat, lon]).add_to(my_map)
 
     my_map.save("Map.html")
+
+
